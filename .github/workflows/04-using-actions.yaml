@@ -6,8 +6,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 04-using-actions/react-app
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Printing folders
-        run: ls -al
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '23.3.0'
+      - name: Install dependencies
+        run: npm ci
+      - name: Run unit tests
+        run: npm run test
