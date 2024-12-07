@@ -10,13 +10,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Printing folders
-        run: ls
-
-
-# npx create-react-app react-app
-# cd react-app
-# npm install --no-audit --save @testing-library/react@"^16.1.0"
-# npm install --save-dev @testing-library/jest-dom
-# npm install --save-dev web-vitals
-# npm run test
-# npm run start
+        run: ls -al
