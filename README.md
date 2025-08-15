@@ -1,5 +1,5 @@
 # github-actions
-Testing github actions
+Testing github actions.
 
 
 #### Commands to get the react app running
